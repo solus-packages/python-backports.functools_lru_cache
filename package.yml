@@ -1,17 +1,25 @@
 name       : python-backports.functools_lru_cache
-version    : '1.4'
-release    : 1
+version    : 1.4
+release    : 2
 source     :
-    - https://pypi.python.org/packages/4e/91/0e93d9455254b7b630fb3ebe30cc57cab518660c5fad6a08aac7908a4431/backports.functools_lru_cache-1.4.tar.gz : 31f235852f88edc1558d428d890663c49eb4514ffec9f3650e7f3c9e4a12e36f
+    - https://files.pythonhosted.org/packages/source/b/backports.functools_lru_cache/backports.functools_lru_cache-1.4.tar.gz : 31f235852f88edc1558d428d890663c49eb4514ffec9f3650e7f3c9e4a12e36f
 license    : MIT
 component  : programming.python
 summary    : Backport of functools.lru_cache from Python 3.3
 description: |
     Backport of functools.lru_cache from Python 3.3
 builddeps  :
+    - python-pytest
     - python-setuptools
     - python-setuptools-scm
+rundeps    :
+    - python-backports
 build      : |
     %python_setup
 install    : |
     %python_install
+    rm $installdir/usr/lib/python2.7/site-packages/backports/__init__.py*
+check      : |
+    pushd $PKG_BUILD_DIR/py2build
+        py.test
+    popd

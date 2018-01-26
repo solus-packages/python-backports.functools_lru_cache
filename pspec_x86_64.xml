@@ -2,8 +2,8 @@
     <Source>
         <Name>python-backports.functools_lru_cache</Name>
         <Packager>
-            <Name>Ewan Paterson</Name>
-            <Email>ewan.paterson@hotmail.co.uk</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>programming.python</PartOf>
@@ -24,19 +24,17 @@
             <Path fileType="library">/usr/lib/python2.7/site-packages/backports.functools_lru_cache-1.4-py2.7.egg-info/dependency_links.txt</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/backports.functools_lru_cache-1.4-py2.7.egg-info/requires.txt</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/backports.functools_lru_cache-1.4-py2.7.egg-info/top_level.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/backports/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/backports/__init__.pyc</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/backports/functools_lru_cache.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/backports/functools_lru_cache.pyc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-09-13</Date>
+        <Update release="2">
+            <Date>2018-01-26</Date>
             <Version>1.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ewan Paterson</Name>
-            <Email>ewan.paterson@hotmail.co.uk</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
