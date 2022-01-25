@@ -1,6 +1,6 @@
 name       : python-backports.functools_lru_cache
 version    : '1.5'
-release    : 3
+release    : 4
 source     :
     - https://files.pythonhosted.org/packages/source/b/backports.functools_lru_cache/backports.functools_lru_cache-1.5.tar.gz : 9d98697f088eb1b0fa451391f91afb5e3ebde16bbdb272819fd091151fda4f1a
 license    : MIT
@@ -9,7 +9,7 @@ summary    : Backport of functools.lru_cache from Python 3.3
 description: |
     Backport of functools.lru_cache from Python 3.3
 builddeps  :
-    - python-pytest
+    - python2-pytest
     - python-setuptools
     - python-setuptools-scm
 rundeps    :
